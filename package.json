@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "description": "Full Stack Monorepo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "react"
+  ],
+  "author": "Aldo R. Robles <httpsnip@gmail.com>",
+  "license": "ISC"
+}
