@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "description": "Full Stack Monorepo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pnpm run --parallel -r start"
   },
   "keywords": [
     "node",
