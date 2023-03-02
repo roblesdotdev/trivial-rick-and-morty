@@ -1,13 +1,13 @@
 {
   "name": "api",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "Express server",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon src/start.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Aldo R. Robles <httpsnip@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

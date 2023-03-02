@@ -1,11 +1,13 @@
 {
   "version": "1.0.0",
+  "private": true,
   "description": "Full Stack Monorepo",
   "scripts": {
     "start": "pnpm run --parallel -r start"
   },
   "keywords": [
     "node",
+    "express",
     "react"
   ],
   "author": "Aldo R. Robles <httpsnip@gmail.com>",
