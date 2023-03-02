@@ -1,9 +1,12 @@
 const express = require("express");
+const getRickAndMortyRoutes = require("./rick-and-morty");
 
 function getApiRoutes() {
   const router = express.Router();
 
   router.use("/healthcheck", (req, res) => res.send({ status: "Alive" }));
+
+  router.use("/rickandmorty", getRickAndMortyRoutes());
 
   router.use(function (_req, res) {
     res

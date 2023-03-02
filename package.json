@@ -9,5 +9,8 @@
     "react"
   ],
   "author": "Aldo R. Robles <httpsnip@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
