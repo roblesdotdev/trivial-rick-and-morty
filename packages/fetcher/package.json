@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "fetcher",
+  "version": "1.0.0",
+  "description": "Fetch client",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
+  },
+  "author": "Aldo R. Robles <httpsnip@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
