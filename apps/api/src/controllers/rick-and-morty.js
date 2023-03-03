@@ -1,12 +1,10 @@
 const { getFavs, addFav, deleteFav } = require("../database");
+const { fetcher } = require("fetcher");
 
 async function getCharacter(req, res) {
   const { id } = req.params;
   try {
-    const apiRes = await fetch(
-      `https://rickandmortyapi.com/api/character/${id}`
-    );
-    const data = await apiRes.json();
+    const data = await fetcher(`/character/${id}`);
     const info = {
       id: data.id,
       name: data.name,
@@ -23,10 +21,7 @@ async function getCharacter(req, res) {
 async function getCharacterDetail(req, res) {
   const { id } = req.params;
   try {
-    const apiRes = await fetch(
-      `https://rickandmortyapi.com/api/character/${id}`
-    );
-    const data = await apiRes.json();
+    const data = await fetcher(`/character/${id}`);
     const info = {
       name: data.name,
       status: data.status,

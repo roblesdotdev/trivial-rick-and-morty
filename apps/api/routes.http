@@ -1,6 +1,6 @@
 
 ### Get Character by ID
-GET http://localhost:3001/rickandmorty/character/5
+GET http://localhost:3001/rickandmorty/character/35
 
 
 ### Get Detail by ID

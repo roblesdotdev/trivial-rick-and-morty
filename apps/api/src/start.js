@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config();
+}
 const logger = require("loglevel");
 const server = require("./server");
 
