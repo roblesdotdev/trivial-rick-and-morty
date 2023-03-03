@@ -1,9 +1,10 @@
-const BASE_URL = process.env.BASE_URL || "http://localhost:3001";
+const BASE_URL = process.env.BASE_URL;
 
 async function fetcher(
   endpoint,
   { data, token, headers: customHeaders, ...customConfig } = {}
 ) {
+  if (endpoint.startsWith("/")) endpoint = endpoint.slice(1);
   const config = {
     method: data ? "POST" : "GET",
     body: data ? JSON.stringify(data) : undefined,
