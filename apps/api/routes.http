@@ -1,0 +1,26 @@
+
+### Get Character by ID
+GET http://localhost:3001/rickandmorty/character/5
+
+
+### Get Detail by ID
+GET http://localhost:3001/rickandmorty/detail/5
+
+
+### Get Fav List
+GET http://localhost:3001/rickandmorty/fav
+
+
+### Add fav
+POST http://localhost:3001/rickandmorty/fav
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Test Name",
+  "description": "Test description"
+}
+
+
+### Delte fav by id
+DELETE http://localhost:3001/rickandmorty/fav/1

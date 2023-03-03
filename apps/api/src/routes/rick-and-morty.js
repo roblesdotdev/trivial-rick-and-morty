@@ -13,7 +13,7 @@ function getRickAndMortyRoutes() {
   router.route("/character/:id").get(getCharacter);
   router.route("/detail/:id").get(getCharacterDetail);
   router.route("/fav").get(getFavList).post(addFavToList);
-  router.route("/fav/:id").post(deleteFavFromList);
+  router.route("/fav/:id").delete(deleteFavFromList);
 
   return router;
 }
