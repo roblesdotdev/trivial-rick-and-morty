@@ -4,7 +4,7 @@ Work in progress...
 
 ### Dependencies
 
-- `git >= 2.39.2S`
+- `git >= 2.39.2`
 - `node >= 18.13`
 - `pnpm >= 7.28.0`
 
