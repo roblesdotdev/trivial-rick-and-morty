@@ -3,7 +3,8 @@
   "private": true,
   "description": "Full Stack Monorepo",
   "scripts": {
-    "start": "pnpm run --parallel -r start"
+    "start": "pnpm run --parallel -r start",
+    "start:nx": "nx run-many --target=start"
   },
   "keywords": [
     "node",
@@ -14,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "nx": "^15.8.3"
   }
 }
