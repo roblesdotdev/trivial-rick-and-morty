@@ -1,9 +1,6 @@
 import { combineReducers } from "redux";
+import request from "./request/reducer";
 
-const foo = (state = {}, _) => {
-  return state;
-};
-
-const rootReducer = combineReducers({ foo });
+const rootReducer = combineReducers({ request });
 
 export default rootReducer;
